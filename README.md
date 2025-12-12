@@ -5,11 +5,14 @@
 
 ## Overview
 
+The whole project is available at Google Drive: [Stereo-Matching Repository](https://drive.google.com/drive/folders/19Pdu7se_x-HNkgpKZY4Uh-6wL6sCKqwX?usp=drive_link)
+
 This project implements and evaluates a complete stereo vision pipeline, ranging from hardware calibration to dense disparity estimation. We present a comparative analysis of three distinct approaches to stereo matching:
 
 1. **Local Methods:** Winner-Take-All (WTA) strategies with Sum of Absolute Differences (SAD) and Census Transform.
 2. **Global Optimization:** Scanline Dynamic Programming (DP).
-3. **Deep Learning:** State-of-the-art RAFT-Stereo architecture and Semi-Global Block Matching (SGBM).
+3. **OpenCV Implementations:** Semi-Global Block Matching (SGBM).
+4. **Deep Learning:** State-of-the-art RAFT-Stereo architecture and Semi-Global Block Matching (SGBM).
 
 The project utilizes data captured from a custom-calibrated dual-smartphone rig and a mirror-based single-camera setup.
 
@@ -18,6 +21,8 @@ The project utilizes data captured from a custom-calibrated dual-smartphone rig 
 * **`calibration.ipynb`**: Handles camera calibration and image rectification. It utilizes the `pupil-apriltags` library to detect AprilTags, calculates camera intrinsics/extrinsics, and generates rectified stereo pairs.
 * **`Stereo.ipynb`**: The main experimentation notebook. It implements the stereo matching algorithms (SAD, Scanline DP, RAFT-Stereo), loads rectified images, and visualizes disparity maps.
 * **`Wenye_Xiong_Meihan_Zheng_Xinyue_Wang_Final.pdf`**: Final project report detailing theoretical background, hardware setup, methodology, and results.
+* **`data_mirror/`**: Contains raw images captured using the mirror-based single-camera setup.
+* **`rectified_images_output/`**: Stores the rectified stereo image pairs generated from the calibration notebook.
 
 ## ⚠️ Important: Running on Google Colab
 
