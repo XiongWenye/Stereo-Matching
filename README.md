@@ -12,7 +12,7 @@ This project implements and evaluates a complete stereo vision pipeline, ranging
 1. **Local Methods:** Winner-Take-All (WTA) strategies with Sum of Absolute Differences (SAD) and Census Transform.
 2. **Global Optimization:** Scanline Dynamic Programming (DP).
 3. **OpenCV Implementations:** Semi-Global Block Matching (SGBM).
-4. **Deep Learning:** State-of-the-art RAFT-Stereo architecture and Semi-Global Block Matching (SGBM).
+4. **Deep Learning:** State-of-the-art RAFT-Stereo architecture.
 
 The project utilizes data captured from a custom-calibrated dual-smartphone rig and a mirror-based single-camera setup.
 
